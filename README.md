@@ -1,12 +1,12 @@
 This looks like a great foundation for a secure, feature-rich command-line calculator\! Here is the content for a **`README.md`** file for this project.
 
-## 🧠 Smart Command-Line Calculator
+##  Smart Command-Line Calculator
 
 A Python-based command-line interface (CLI) calculator designed to safely evaluate complex mathematical expressions using a curated set of functions from the `math` library.
 
 -----
 
-### ✨ Features
+###  Features
 
   * **Secure Evaluation:** Uses a restricted `eval()` context to prevent execution of arbitrary code, enhancing security.
   * **Advanced Math Functions:** Supports a wide range of trigonometric, logarithmic, and algebraic functions, including:
@@ -19,7 +19,7 @@ A Python-based command-line interface (CLI) calculator designed to safely evalua
 
 -----
 
-### 🚀 Getting Started
+###  Getting Started
 
 #### Prerequisites
 
@@ -58,7 +58,7 @@ Result: 1002.0
 
 -----
 
-### 💻 Code Breakdown
+###  Code Breakdown
 
 The core functionality resides in the `smart_calculate` function:
 
@@ -68,7 +68,7 @@ The core functionality resides in the `smart_calculate` function:
 
 -----
 
-### 💡 Future Enhancements
+###  Future Enhancements
 
   * **User Variable Storage:** Allow users to define and store session-based variables (e.g., `x = 5`, then `x * 2`).
   * **History Feature:** Implement a command history accessible via up/down arrows.
