@@ -2,7 +2,6 @@ import math
 import tkinter as tk
 from tkinter import simpledialog, messagebox
 
-# --- Setup for Smart Functionality --- #
 SMART_FUNCTIONS = {
     'sin': math.sin,
     'cos': math.cos,
@@ -16,7 +15,6 @@ SMART_FUNCTIONS = {
     'e': math.e,
 }
 
-# --- Core Calculator Logic ---
 def smart_calculate(expression):
     """
     Evaluates a mathematical expression using a limited and safe context.
@@ -25,7 +23,6 @@ def smart_calculate(expression):
 
     safe_locals = SMART_FUNCTIONS.copy()
     
-    # Convert expression to lowercase to match function keys
     expression = expression.lower().strip()
     
     try:
@@ -42,7 +39,6 @@ def smart_calculate(expression):
         else:
             return f"Error in expression: {e}"
 
-# --- Main Interactive Loop ---
 def main_calculator():
     """
     Runs the interactive command-line calculator.
@@ -52,7 +48,7 @@ def main_calculator():
     print("You can use: +, -, *, /, **, sin(), cos(), sqrt(), pi, e, etc.")
     
     while True:
-        # Get input from the user
+        
         user_input = input("\nEnter calculation: ")
         
         if user_input.lower() in ['quit', 'exit']:
@@ -62,9 +58,9 @@ def main_calculator():
         if not user_input.strip():
             continue 
             
-        # Get the calculated result
         output = smart_calculate(user_input)
         print(f"Result: {output}")
 
 if __name__ == "__main__":
+
     main_calculator()
